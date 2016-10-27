@@ -1,0 +1,124 @@
+body {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+time {
+    font-style: italic;
+}
+
+h1 {
+	text-align: center;
+}
+
+#flex {
+    min-height: auto;
+}
+
+#flex > header, #flex > footer {
+    background: black;
+}
+
+#flex > header > h1 {
+    font-size: 3em;
+    margin: 0px;
+    padding-left: 40px;
+    background: grey;
+}
+
+ul.topnav {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+
+    font-size: 2em;
+}
+
+ul.topnav > li > a {
+    text-decoration: none;
+    color: #BBB;
+}
+
+ul.topnav > li > a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 5px;
+    padding-top: 82px;
+    padding-bottom: 81px;
+}
+
+main > section {
+    padding: 0px 32px
+}
+
+
+main > section > article {
+    max-width: 300px;
+    margin-left: 30px;
+}
+
+.sidead {
+    border: 2px solid black;
+    height: 600px;
+    width: 120px;
+}
+
+#flex > footer{
+    height: 80px;
+}
+
+#flex > footer >p {
+    margin-right: 10px;
+}
+
+
+article > img {
+    width: 90%;
+}
+
+
+/*****Media queries*****/
+
+@media screen and (min-width:681px){
+    .icon{display: none;}
+}
+
+/* When the screen is less than 680 pixels wide, hide all list items, 
+except for the first one ("Home"). Show the list item that contains 
+the link to open and close the topnav (li.icon) */
+
+@media screen and (max-width:680px){
+    #flex h1{display: none;}
+    ul.topnav li:not(.icon){display: none;}
+    ul.topnav {justify-content: flex-end;
+               padding-right: 10px;}
+    .icon{order: -1;}
+    .icon > a{padding: 10px;}
+}
+
+/* The "responsive" class is added to the topnav 
+with JavaScript when the user clicks on the icon. 
+This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: flex-end;
+      text-align: right;
+  }
+
+  ul.topnav.responsive li {
+      display: initial;
+      width: 90%;
+  }
+
+  ul.topnav.responsive li a {
+      padding: auto;
+  }
+
+.ad {
+	height: 600px;
+}

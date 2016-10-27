@@ -1,0 +1,71 @@
+#flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#flex > header {
+    order: 1;
+    flex: 0;
+}
+
+#flex > main {
+    order: 2;
+    flex: 1;
+}
+
+#flex > footer {
+    order: 3;
+    flex: 0;
+}
+
+ul.topnav {
+    display: flex;
+    flex-flow: row nowrap;
+
+    justify-content: space-around;
+}
+
+
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    background: #EEEEE9;
+
+
+}
+
+main > section {
+
+    order: 1;
+    flex: 4;
+}
+
+.sidead {
+    order: 2;
+}
+
+
+
+main > section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+
+#flex > footer {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+}
+
+
+article > footer {
+    display: flex;
+    justify-content: space-between
+}
+
+img.ad {
+    height: 600px;
+}
